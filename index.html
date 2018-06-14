@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title> Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>	
+	
+
+</head>
+<body>
+ 
+    <div id="page">	
+      <div id="head">
+        <h2>Корзина магазина</h2>
+      </div>
+      
+       <div id="limit">
+     <label for="field"> Укажите ваш лимит в $:</label>
+    <input type="number" id="field" value="0.00" >
+    <button id="modify_input">Установить</button>  
+  </div>
+		 <div class="flex-container">
+		<section id="products" class="products">
+			<h4>Наши товары</h4>
+			<ul>
+				<li id="product-1" data-price="100"><span>Серьги / 100$</span></li>
+				<li id="product-2" data-price="50"><span>Браслет /50$ </span></li>
+				<li id="product-3" data-price="80"><span>Пальто / 80$</span></li>
+				<li id="product-4" data-price="38"><span>Сапоги/ 38$</span></li>
+				<li id="product-5" data-price="15"><span>Букет цветов / 15$ </span></li>
+				<li id="product-6" data-price="20"><span>Ваза / 20$</span></li>
+
+			</ul>
+		</section>
+      <section id="cart" class="shopping-cart">
+			<h4>Ваша корзина</h4>
+			<ul>
+			</ul>
+			<span class="total" id="total" sum="0"></span>
+		</section>
+	</div> 	
+      <div class="name">
+        <h4 title="GossJS" id="author">Фирсова Маргарита</h4>
+      </div>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
